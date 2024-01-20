@@ -49,7 +49,7 @@ struct PostView: View {
             }
             .frame(height: 400)
             .overlay{
-                TitleAndSubtitleView()
+                Shadow()
             }
             .overlay(
                 HStack(spacing: 16) {
@@ -83,7 +83,7 @@ struct PostView: View {
     }
     
     @ViewBuilder
-    func TitleAndSubtitleView() -> some View {
+    func Shadow() -> some View {
         ZStack(alignment: .bottomLeading, content: {
             LinearGradient(colors: [
                 .clear,
